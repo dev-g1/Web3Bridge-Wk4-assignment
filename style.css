@@ -1,0 +1,117 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    line-height: 20px;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+h1{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+}
+.hfree{
+    color: hsl(71, 73%, 54%);
+    font-weight: bold;
+}
+p{
+    color: hsl(218, 22%, 67%);
+    margin-top: 7px;
+}
+.access, .access p, .us{
+    color: white;
+}
+h2{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+#price  {
+    font-size: 35px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+#per{
+    margin-bottom: 20px;
+}
+.sub{
+    display: flex; 
+    flex-wrap: wrap;
+}
+#join{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px; 
+} 
+.community{
+    background: white;
+    width: 605px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    
+}
+.community,.access,.us{
+    padding: 55px;
+    letter-spacing: .4px;
+    line-height: 22px;
+}
+.access{
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 5px;
+    width: 250px;
+    height: 200px;
+}
+.us{
+    background-color: hsl(179, 82%, 43%);
+    border-bottom-right-radius: 5px;
+    width: 250px;
+    padding-left: 50px;
+    height: 200px;
+}
+
+ul{
+    list-style: none;
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+@media screen and (max-width: 750px) {
+    .sub{
+        flex-direction: column;
+    }
+    .community{
+        width: 250px;
+        text-align: justify;
+    }
+    .access{
+        border-bottom-left-radius: 0;
+        width: 250px;
+    }
+    .us{
+        border-bottom-left-radius: 5px; 
+    }
+    .access,.us{
+        /* margin-left: 171px; */
+        justify-content: center;
+        align-items: center;
+    }
+    .community,.access,.us{
+        padding: 30px
+    }
+    
+    
+}
